@@ -10,11 +10,9 @@ A PyTorch re-implementation of **CenterFusion**, as described in:
 
 - [Overview](#overview)
 - [Architecture](#architecture)
-- [Installation](#installation)
 - [Dataset](#dataset)
 - [Usage](#usage)
 - [Results](#results)
-- [Project Structure](#project-structure)
 - [References](#references)
 - [License](#license)
 
@@ -124,36 +122,6 @@ Ablation results (nuScenes validation split):
 | + Frustum Association | +25.9% | +2.0% |
 | + Pillar Expansion + Frustum Association | +34.5% | +4.3% |
 | + Flip Test | +37.8% | +8.4% |
-
----
-
-## Project Structure
-
-```
-centerfusion-reimplementation/
-├── data/
-│   └── nuscenes/
-├── models/
-│   └── pretrained/
-├── src/
-│   ├── lib/
-│   │   ├── datasets/
-│   │   │   └── nuscenes.py
-│   │   ├── models/
-│   │   │   ├── networks/
-│   │   │   │   └── dla.py
-│   │   │   └── centerfusion.py
-│   │   └── detectors/
-│   │       └── centerfusion_detector.py
-│   ├── tools/
-│   │   └── convert_nuScenes.py
-│   ├── main.py
-│   ├── test.py
-│   └── demo.py
-├── experiments/
-├── requirements.txt
-└── README.md
-```
 
 ---
 
