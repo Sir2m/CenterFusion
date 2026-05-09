@@ -10,7 +10,6 @@ A PyTorch re-implementation of **CenterFusion**, as described in:
 
 - [Overview](#overview)
 - [Architecture](#architecture)
-- [Requirements](#requirements)
 - [Installation](#installation)
 - [Dataset](#dataset)
 - [Usage](#usage)
@@ -45,37 +44,6 @@ The CenterFusion pipeline consists of the following stages:
 
 ---
 
-## Requirements
-
-- Python >= 3.7
-- PyTorch >= 1.7
-- CUDA >= 10.2
-- numpy
-- opencv-python
-- pyquaternion
-- nuscenes-devkit
-- scipy
-
-A full list of dependencies is provided in `requirements.txt`.
-
----
-
-## Installation
-
-```bash
-git clone https://github.com/<your-username>/centerfusion-reimplementation.git
-cd centerfusion-reimplementation
-pip install -r requirements.txt
-```
-
-Compile DCN (Deformable Convolutional Networks) if required by the backbone:
-
-```bash
-cd src/lib/models/networks/DCNv2
-python setup.py build develop
-```
-
----
 
 ## Dataset
 
